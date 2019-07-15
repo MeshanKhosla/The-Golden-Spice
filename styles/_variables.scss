@@ -1,0 +1,22 @@
+// Primary colors
+$redColor: #d02e2e;
+$yellowColor: #ffd700;
+
+// Bootstrap media queries
+$smallDeviceWidth: 576px;
+$mediumDeviceWidth: 768px;
+$largeDeviceWidth: 992px;
+
+// Gradient colors
+$aboutPageGradient: radial-gradient(
+  circle,
+  rgba(185, 36, 49, 1) 4%,
+  rgba(80, 76, 66, 1) 73%
+);
+$contactPageGradient: radial-gradient(
+  circle,
+  rgba(198, 187, 23, 1) 4%,
+  rgba(185, 36, 49, 1) 73%,
+  rgba(0, 0, 0, 1) 100%
+);
+$homePageGradient: linear-gradient(to right, #f3904f, #3b4371);

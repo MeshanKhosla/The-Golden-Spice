@@ -1,0 +1,97 @@
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    max-height: 50vh;
+  }
+}
+
+.card {
+  width: 18rem;
+  height: 400px;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  // margin-top: -100px;
+}
+.card-text {
+  color: white;
+}
+@media (max-width: $mediumDeviceWidth) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card .carousel img {
+  height: 334px;
+}
+
+.card:hover {
+  box-shadow: -1px 9px 40px -17px rgba(0, 0, 0, 0.75);
+}
+
+// ! Start of gradient
+.home-gradient-wrapper {
+  position: relative;
+  min-height: 60vh;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: ""; // :before and :after both require content
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    height: 70%;
+    background-image: $homePageGradient;
+    border-radius: 50px;
+    opacity: 0.5;
+  }
+
+  * {
+    z-index: 100;
+    color: white;
+  }
+}
+
+.home-gradient-info {
+  position: relative;
+  margin: 20% auto;
+  font-size: 5vh;
+  width: 40%;
+  height: 50%;
+  word-wrap: break-word;
+  text-align: center;
+}
+@media (max-width: $mediumDeviceWidth) {
+  .home-gradient-info {
+    font-size: 30px;
+  }
+
+  // Medium screen card optimization
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: $smallDeviceWidth) {
+  .home-gradient-info {
+    font-size: 25px;
+  }
+
+  // Small screen card back to normal
+  .card-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .home-gradient-info {
+    margin: 10% auto;
+  }
+}

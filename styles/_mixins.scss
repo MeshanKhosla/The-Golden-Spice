@@ -1,0 +1,49 @@
+// Gradient seen on about/contact page.
+// @param: entire gradient(linear-gradient(to top, #09203f 0%, #537895 100%))
+// @param: name of page (ie: contact-gradient-wrapper needs 'contact')
+@mixin backgroundGradient($gradient, $name) {
+  .#{$name}-gradient-wrapper {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+
+    &::after {
+      content: ""; // :before and :after both require content
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 100%;
+      background-image: $gradient;
+      border-radius: 50px;
+      opacity: 0.5;
+    }
+
+    * {
+      z-index: 100;
+      color: white;
+    }
+  }
+
+  .#{$name}-gradient-info {
+    position: relative;
+    margin: 10% auto;
+    font-size: 40px;
+    width: 80%;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  @media (max-width: $mediumDeviceWidth) {
+    .#{$name}-gradient-info {
+      margin: 20% auto;
+    }
+  }
+
+  @media (max-width: $smallDeviceWidth) {
+    .#{$name}-gradient-info {
+      font-size: 25px;
+    }
+  }
+}

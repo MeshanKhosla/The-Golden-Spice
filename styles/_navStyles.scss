@@ -1,0 +1,53 @@
+.navbar {
+  width: 100%;
+  min-height: 8vh;
+  background: $redColor;
+  z-index: 200;
+
+  li a {
+    font-size: 20px;
+  }
+}
+
+.current-page {
+  border-top: 1px solid $yellowColor;
+  border-bottom: 1px solid $yellowColor;
+}
+
+.navbar-toggler.ml-auto {
+  border-color: $yellowColor;
+}
+
+/* Centering dropdown nav text and fixing mobile border box*/
+@media (max-width: 992px) {
+  .navbar li a {
+    text-align: center;
+  }
+  .current-page {
+    border: none;
+  }
+  // Span
+  .current-page-mobile {
+    border-top: 1px solid $yellowColor;
+    border-bottom: 1px solid $yellowColor;
+  }
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+@media (max-width: 335px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+
+#navbar-links-custom {
+  color: $yellowColor;
+
+  &:hover {
+    // Darker yellow on hover
+    color: #e2c20a;
+  }
+}

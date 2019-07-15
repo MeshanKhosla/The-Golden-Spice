@@ -1,0 +1,77 @@
+@import "./variables";
+@import "./navStyles";
+@import "./indexStyles";
+@import "./aboutStyles";
+@import "./contactStyles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Serif Pro", serif;
+  height: 100%;
+  background-image: url("../Assets/india\ bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px; /* For footer */
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: $redColor;
+  padding: 30px 0px;
+  text-align: center;
+
+  small {
+    color: white;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+}
+
+.footer-hours {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  color: white;
+  z-index: 20;
+}
+
+// Footer optimization
+@media (max-width: $smallDeviceWidth) {
+  footer {
+    text-align: left;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-hours {
+    font-size: 15px;
+  }
+
+  footer small {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 355px) {
+  .footer-hours {
+    font-size: 10px;
+  }
+}
