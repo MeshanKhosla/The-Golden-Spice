@@ -119,13 +119,16 @@
 }
 
 .home-gradient-info {
+  color: white;
   position: relative;
-  margin: 20% auto;
+  margin: 10% auto;
   font-size: 5vh;
   width: 40%;
   height: 50%;
   word-wrap: break-word;
   text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#665f5e), color-stop(27%, #675f5e), to(#2e657a));
+  background: linear-gradient(90deg, #665f5e 0%, #675f5e 27%, #2e657a 100%);
 }
 
 @media (max-width: 768px) {
@@ -262,7 +265,8 @@
 body {
   font-family: "Source Serif Pro", serif;
   height: 100%;
-  background-image: url("../Assets/india bg.jpg");
+  background: -webkit-gradient(linear, right top, left top, from(#ba7453), to(#d1a984));
+  background: linear-gradient(to left, #ba7453, #d1a984);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

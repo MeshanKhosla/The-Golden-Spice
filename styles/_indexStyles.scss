@@ -11,7 +11,6 @@
   width: 18rem;
   height: 400px;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-  // margin-top: -100px;
 }
 .card-text {
   color: white;
@@ -60,13 +59,20 @@
 }
 
 .home-gradient-info {
+  color: white;
   position: relative;
-  margin: 20% auto;
+  margin: 10% auto;
   font-size: 5vh;
   width: 40%;
   height: 50%;
   word-wrap: break-word;
   text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 95, 94, 1) 0%,
+    rgba(103, 95, 94, 1) 27%,
+    rgba(46, 101, 122, 1) 100%
+  );
 }
 @media (max-width: $mediumDeviceWidth) {
   .home-gradient-info {
