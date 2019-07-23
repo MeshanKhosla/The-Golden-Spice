@@ -1,4 +1,22 @@
 @import "./mixins";
 @import "./variables";
 
-@include backgroundGradient($aboutPageGradient, about);
+.about-content {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#about-text {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+  color: $yellowColor;
+}
+
+#about-text-border {
+  border-top: 3px $redColor solid;
+  border-bottom: 3px $redColor solid;
+}

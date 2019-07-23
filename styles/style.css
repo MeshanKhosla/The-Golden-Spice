@@ -155,103 +155,64 @@
   }
 }
 
-.about-gradient-wrapper {
-  position: relative;
-  min-height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 15%;
-}
-
-.about-gradient-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 100%;
-  background-image: radial-gradient(circle, #b92431 4%, #504c42 73%);
-  border-radius: 50px;
-  opacity: 0.5;
-}
-
-.about-gradient-wrapper * {
-  z-index: 100;
+.about-content {
+  background-color: orange;
   color: white;
-}
-
-.about-gradient-info {
-  position: relative;
-  margin: 10% auto;
-  font-size: 40px;
-  width: 80%;
-  word-wrap: break-word;
   text-align: center;
+  margin-top: 5vh;
 }
 
-@media (max-width: 768px) {
-  .about-gradient-info {
-    margin: 20% auto;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-gradient-info {
-    font-size: 25px;
-  }
-}
-
-.contact-gradient-wrapper {
-  position: relative;
-  min-height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 15%;
-}
-
-.contact-gradient-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 100%;
-  background-image: radial-gradient(circle, #c6bb17 4%, #b92431 73%, black 100%);
-  border-radius: 50px;
-  opacity: 0.5;
-}
-
-.contact-gradient-wrapper * {
-  z-index: 100;
+#about-text {
+  font-size: 2em;
   color: white;
-}
-
-.contact-gradient-info {
-  position: relative;
-  margin: 10% auto;
-  font-size: 40px;
-  width: 80%;
-  word-wrap: break-word;
   text-align: center;
+  margin-top: 5vh;
+  color: #ffd700;
 }
 
-@media (max-width: 768px) {
-  .contact-gradient-info {
-    margin: 20% auto;
-  }
+#about-text-border {
+  border-top: 3px #d02e2e solid;
+  border-bottom: 3px #d02e2e solid;
 }
 
-@media (max-width: 576px) {
-  .contact-gradient-info {
-    font-size: 25px;
+.contact-content {
+  font-size: 2em;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 20%;
+  background: linear-gradient(340deg, #af9e2f 24%, #818181 57%, black 100%);
+  text-align: center;
+  height: 110%;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#contact-text {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+  color: #ffd700;
+}
+
+#contact-text-border {
+  border-top: 3px #d02e2e solid;
+  border-bottom: 3px #d02e2e solid;
+}
+
+#tgs-map {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  background: none !important;
+}
+
+@media (min-width: 1800px) {
+  .contact-content {
+    margin-bottom: 10%;
   }
 }
 
