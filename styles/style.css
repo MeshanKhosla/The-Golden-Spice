@@ -156,10 +156,21 @@
 }
 
 .about-content {
-  background-color: orange;
+  font-size: 1em;
   color: white;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5vh;
+  margin-bottom: 23%;
+  background: linear-gradient(340deg, #af9e2f 24%, #818181 57%, black 100%);
+  text-align: center;
+  height: 110%;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.about-content hr {
+  border: 1px solid white;
 }
 
 #about-text {
@@ -173,6 +184,12 @@
 #about-text-border {
   border-top: 3px #d02e2e solid;
   border-bottom: 3px #d02e2e solid;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    font-size: 2em;
+  }
 }
 
 .contact-content {

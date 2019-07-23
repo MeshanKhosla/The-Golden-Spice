@@ -2,10 +2,27 @@
 @import "./variables";
 
 .about-content {
-  background-color: orange;
+  font-size: 1em;
   color: white;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5vh;
+  margin-bottom: 23%;
+  background: linear-gradient(
+    340deg,
+    rgba(175, 158, 47, 1) 24%,
+    rgba(129, 129, 129, 1) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  text-align: center;
+  height: 110%;
+  border-radius: 10px;
+  width: 80%;
+
+  hr {
+    border: 1px solid white;
+  }
 }
 
 #about-text {
@@ -19,4 +36,10 @@
 #about-text-border {
   border-top: 3px $redColor solid;
   border-bottom: 3px $redColor solid;
+}
+
+@media (min-width: $mediumDeviceWidth) {
+  .about-content {
+    font-size: 2em;
+  }
 }
