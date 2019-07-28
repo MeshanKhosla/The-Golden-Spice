@@ -48,4 +48,4 @@ const tl = new TimelineMax();
 tl.fromTo(nav, 1.5, { x: "1500px" }, { x: "0px" })
   .fromTo(hours, 1.5, { x: "1000px" }, { x: "0px" }, "-=1.5")
   .fromTo(body, 1, { opacity: "0.8" }, { opacity: "1" })
-  .fromTo(carousel, 1.5, { maxWidth: "50px" }, { maxWidth: "100%" }, "-=2.5");
+  .fromTo(carousel, 1.5, { maxWidth: "5%" }, { maxWidth: "100%" }, "-=2.5");
