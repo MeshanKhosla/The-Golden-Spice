@@ -50,13 +50,28 @@
   color: #e2c20a;
 }
 
+.carousel-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-image: url("../Assets/indiaBG.jpg");
+  background-size: cover;
+}
+
+.carousel-wrapper img {
+  margin-top: 5vh;
+  max-height: 50vh;
+}
+
+@media (max-width: 500px) {
+  .carousel-wrapper {
+    height: 50vh;
+  }
+}
+
 .carousel {
   margin-left: auto;
   margin-right: auto;
-}
-
-.carousel img {
-  max-height: 50vh;
 }
 
 .card {
